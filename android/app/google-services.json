@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461752841096",
+    "project_id": "f3-talk",
+    "storage_bucket": "f3-talk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461752841096:android:179d903dad36ab1c35803d",
+        "android_client_info": {
+          "package_name": "com.example.f3_talk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1ouomYf1bJCn88DRk_6yWInu38rY1yHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
