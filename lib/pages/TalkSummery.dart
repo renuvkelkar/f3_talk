@@ -174,7 +174,7 @@ class _TalkSummeryState extends State<TalkSummery> {
       print('transcriptions/$uplodingfile.wav_transcription.txt');
       Reference ref = firebaseStorage
           .ref('transcriptions')
-          .child('$uplodingfile.wav_transcription.txt');
+          .child('transcriptions/audio543766757130961456.m4a.wav_transcription.txt');
 
       String downloadUrl = await ref.getDownloadURL();
       http.Response response = await http.get(Uri.parse(downloadUrl));
