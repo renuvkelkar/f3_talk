@@ -56,6 +56,7 @@ class _SummersiseTextState extends State<SummersiseText> {
                 if (snapshot.hasData) {
                   return ListView.builder(
                       shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
                       itemCount: snapshot.data!.docs.length,
                       itemBuilder: (context, index) {
                         var data = snapshot.data!.docs.length;

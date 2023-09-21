@@ -141,7 +141,9 @@ class _TalkSummeryState extends State<TalkSummery> {
       print("uploading file");
       print(uplodingfile);
       setState(() {
-        downloadFile();
+        Future.delayed(const Duration(seconds: 15), () {
+          downloadFile();
+        });
       });
 
       String getFileNameFromUrl(String url) {
@@ -174,7 +176,8 @@ class _TalkSummeryState extends State<TalkSummery> {
       print('transcriptions/$uplodingfile.wav_transcription.txt');
       Reference ref = firebaseStorage
           .ref('transcriptions')
-          .child('transcriptions/audio543766757130961456.m4a.wav_transcription.txt');
+          .child('transcriptions/$uplodingfile.wav_transcription.txt');
+         // .child('transcriptions/audio543766757130961456.m4a.wav_transcription.txt');
 
       String downloadUrl = await ref.getDownloadURL();
       http.Response response = await http.get(Uri.parse(downloadUrl));
