@@ -43,6 +43,8 @@ dependencies:
   path_provider: ^2.1.1
   http: ^1.1.0
   dropdown_button2: ^2.3.9
+  camera: ^0.10.5+2
+  google_mlkit_selfie_segmentation:
 
 
 dev_dependencies:
